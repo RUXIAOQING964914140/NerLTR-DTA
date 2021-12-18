@@ -60,3 +60,25 @@ b = a_trans
 r = pd.DataFrame(b)
 r.to_csv("Trans_kiba_binding_affinity.txt",sep=' ',header = 0,index=0)
 
+
+# sharing-sharing matrix
+data = np.loadtxt('davis_binding_affinity.txt')
+def func1(x,y):
+#    print(type(x),y)
+    sum = 0
+    for i in range(x.shape[0]):
+        if x[i] == 5.0 or y[i] == 5.0:
+            sum += 0
+        else:
+            sum+=1
+    return  sum
+
+mm = open('Share/1/Affi_drug_shareTarget_num.txt',mode = 'w+', encoding='utf-8')
+for i in range(data.shape[0]):
+    for j in range(data.shape[0]):
+        #print(str(func1(data[i,:] ,data[j,:])),end=' ')
+        mm.write(str(func1(data[i,:] ,data[j,:]))+' ')
+    #print()
+    mm.write('\n')
+
+mm.close()
