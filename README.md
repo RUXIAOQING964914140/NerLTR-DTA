@@ -43,7 +43,6 @@ java -jar RankLib-2.16.jar -load t_model.txt -rank test.txt -indri test_rank.txt
 
 2.index_available.py -- Get the index of the data that satisfies the constraint
 
-
 3. AAF.py/SAF.py -- Extract features
 
 
