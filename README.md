@@ -1,7 +1,7 @@
 # NerLTR-DTA
-#INSTALLATION
+# INSTALLATION
 
-#Requirements:
+# Requirements:
 Python 3.7x (may work with earlier versions, not tested)
 Sklearn 0.0
 Numpy 1.17.0
@@ -10,7 +10,7 @@ Java environment
 
 
 # Usage
-RankLib-2.16.jar
+1.RankLib-2.16.jar
 java -jar RankLib-2.16.jar -train train.txt 
                            -ranker 0 
                            -metric2t NDCG@50
@@ -22,9 +22,13 @@ java -jar RankLib-2.16.jar -train train.txt
                            -save t_model.txt
                            -out t_out.txt
 java -jar RankLib-2.16.jar -load t_model.txt -rank test.txt -indri test_rank.txt
-                           
 
-#Evaluation criteria:
+2.index_available.py -- Get the index of the data that satisfies the constraint
+
+3. AAF.py/SAF.py -- Extract features
+
+
+# Evaluation criteria:
 MSE
 CI
 Rm2
