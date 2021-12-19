@@ -15,7 +15,9 @@ Java environment
 
 
 # Usage
+
 1.RankLib-2.16.jar
+
 java -jar RankLib-2.16.jar -train train.txt 
                            -ranker 0 
                            -metric2t NDCG@50
