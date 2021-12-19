@@ -3,9 +3,9 @@ INSTALLATION
 
 Requirements:
 Python 3.7x (may work with earlier versions, not tested)
-Sklearn
-Numpy
-Pandas
+Sklearn 0.0
+Numpy 1.17.0
+Pandas  1.2.3
 Java environment
 
 
