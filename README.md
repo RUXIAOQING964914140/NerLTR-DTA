@@ -19,7 +19,8 @@ Java environment
 1.RankLib-2.16.jar
 
 train:  
-**java -jar RankLib-2.16.jar -train train.txt   -ranker 0    -metric2t NDCG@50    -tree 500  -leaf 300  -shrinkage 0.03  -mls 5   -tc 256 -save t_model.txt -out t_out.txt**
+**java -jar RankLib-2.16.jar -train train.txt   -ranker 0    -metric2t NDCG@50    -tree 500  -leaf 300  -shrinkage 0.03 
+                         -mls 5   -tc 256 -save t_model.txt -out t_out.txt**
 
 test:  
 **java -jar RankLib-2.16.jar -load t_model.txt -rank test.txt -indri test_rank.txt**
