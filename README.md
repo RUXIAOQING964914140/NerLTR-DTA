@@ -18,32 +18,16 @@ Java environment
 
 1.RankLib-2.16.jar
 
-java -jar RankLib-2.16.jar -train train.txt 
-                           
-                           -ranker 0 
-                          
-                          -metric2t NDCG@50
-                           
-                           -tree 500
-                           
-                           -leaf 300
-                           
-                           -shrinkage 0.03
-                           
-                           -mls 5
-                           
-                           -tc 256
-                          
-                          -save t_model.txt
-                          
-                          -out t_out.txt
+train:  
+**java -jar RankLib-2.16.jar -train train.txt   -ranker 0    -metric2t NDCG@50    -tree 500  -leaf 300  -shrinkage 0.03  -mls 5   -tc 256 -save t_model.txt -out t_out.txt**
 
-java -jar RankLib-2.16.jar -load t_model.txt -rank test.txt -indri test_rank.txt
+test:  
+**java -jar RankLib-2.16.jar -load t_model.txt -rank test.txt -indri test_rank.txt**
 
 
 2.index_available.py -- Get the index of the data that satisfies the constraint
 
-3. AAF.py/SAF.py -- Extract features
+3.AAF.py/SAF.py -- Extract features
 
 
 # Evaluation criteria:
@@ -55,11 +39,11 @@ CI
 Rm2
 
 
-#Feature:
+##### Feature:
 
 The characteristics of drugs and proteins are obtained in the same way, and the code only lists one
 
-#Note:
+##### Note:
 
 Some data processing is done with linux commands,the code is simple, therefore the specific code is not listed.
 
